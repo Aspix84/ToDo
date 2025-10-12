@@ -96,6 +96,44 @@ ul {
     top: 8px;
 }
 
-.todo__list li::after {
-    content: "";
+.todo__list li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+.todo__list li.checked::before{
+    border-color: #03793b;
+    background-color: #03793b;
+}
+
+.todo__list li.checked::after{
+    content: "\2714";
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    color: #fff;
+}
+
+.todo__list li span{
+    position: absolute;    
+    top:5px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 23px;
+    border-radius: 50%;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.todo__list li span:hover{
+    background-color: #f1f1f1;
+}
+
+.error{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', san-serif;
+    color:#ad190e;
+    font-size: 18px;
 }
