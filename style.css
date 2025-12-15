@@ -16,7 +16,7 @@ ul {
 }
 
 .todo__box {
-    max-width: 600px;
+    max-width: 1200px;
     border-radius: 10px;
     background-color: #fff;
     padding: 40px 30px 70px;
@@ -53,7 +53,18 @@ ul {
     font-size: 13px;
     border: none;
     outline: none;
-    min-width: 75%;
+    min-width: 70%;
+}
+
+.datePickerFl{
+    /* background-color: transparent; */
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    outline: none;
+    max-width: 20%;
 }
 
 .todo__btn {

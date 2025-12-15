@@ -1,15 +1,22 @@
+
+const datePicker = document.querySelector('#datePicker')
 const todoInput = document.querySelector('.todo__input')
 const todoList = document.querySelector('.todo__list')
 const todoBtn = document.querySelector('.todo__btn')
 const todoListItem = document.querySelector('.todo__list li')
 const msg = document.querySelector('.message')
 
+// const flatpickr = require("flatpickr"); 
+// import flatpickr from "flatpickr";
+
+flatpickr("#datePicker", {});
+
 todoBtn.addEventListener('click', ()=> {
     if(todoInput.value === ""){
         msg.innerHTML = "Введите задачу"
         msg.className="error"
     }else{
-        todoList.innerHTML += `<li>${todoInput.value}<span>\u00d7</span></li>`
+        todoList.innerHTML += `<li>${datePicker.value} - ${todoInput.value}<span>\u00d7</span></li>`
         todoInput.value = ""
          msg.className=""
          msg.innerHTML=""

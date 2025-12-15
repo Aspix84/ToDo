@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="style.css">
+    
 </head>
+
 <body>
     <div class="todo">
         <div class="todo__box">
@@ -13,18 +17,20 @@
                 <h2>Job's List</h2>
             </div>
             <div class="todo__row">
+                <input class="flatpickr flatpickr-input active datePickerFl" type="text" name="" id="datePicker" placeholder="Select Date" >
                 <input type="text" placeholder="input your task here..." class="todo__input">
                 <button class="todo__btn">Add Task</button>
             </div>
             <span class="message"></span>
             <ul class="todo__list">
-               <!-- <li class="checked">Task</li>
+                <!-- <li class="checked">Task</li>
                <li>Task</li>
                <li>Task</li> -->
             </ul>
         </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
