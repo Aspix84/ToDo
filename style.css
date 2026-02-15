@@ -53,10 +53,10 @@ ul {
     font-size: 13px;
     border: none;
     outline: none;
-    min-width: 70%;
+    min-width: 60%;
 }
 
-.datePickerFl{
+.datePickerFl, .LocationList{
     /* background-color: transparent; */
     background-color: #f1f1f1;
     padding: 10px;
@@ -65,6 +65,10 @@ ul {
     border: 1px solid #ccc;
     outline: none;
     max-width: 20%;
+}
+
+.LocationList{
+    margin-left: 20px;
 }
 
 .todo__btn {

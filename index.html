@@ -17,7 +17,21 @@
                 <h2>Job's List</h2>
             </div>
             <div class="todo__row">
-                <input class="flatpickr flatpickr-input active datePickerFl" type="text" name="" id="datePicker" placeholder="Select Date" >
+                <input class="flatpickr flatpickr-input active datePickerFl" type="text" name="" id="datePicker" placeholder="Select Date" > 
+                <select id="Location" class="LocationList"> 
+                    <option value="" disabled selected>Select Location</option>
+                    <option value="Administration">Administration</option>
+                        <optgroup label="ground floor">
+                            <option value="glavvrach">Plitkin</option>
+                            <option value="nachmed">Mihail Ivanovich</option>
+                            <option value="labaratories">Labs</option>
+                            <option value="secretary">Secretar</option>
+                            <option value="lfk">LFK</option>
+                            
+                        </optgroup>
+                    <option value="Poliklinika">Poliklinika</option>
+                    <option value="Hospital">7-fl building</option>
+                </select>
                 <input type="text" placeholder="input your task here..." class="todo__input">
                 <button class="todo__btn">Add Task</button>
             </div>
